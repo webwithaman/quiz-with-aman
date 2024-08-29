@@ -3,7 +3,7 @@
 
 ## Overview
 
-**Quiz with Aman** is a fully responsive quiz web application designed to provide an engaging and interactive experience for users. The app is built using HTML, CSS, and JavaScript, featuring a sleek and appealing UI. Users can participate in a quiz with multiple-choice questions, receive instant feedback on their answers, and see their overall score at the end.
+**quiz-with-aman** is a fully responsive quiz web application designed to provide an engaging and interactive experience for users. The app is built using HTML, CSS, and JavaScript, featuring a sleek and appealing UI. Users can participate in a quiz with multiple-choice questions, receive instant feedback on their answers, and see their overall score at the end.
 
 ## Features
 
