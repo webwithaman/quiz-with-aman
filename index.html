@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz With Aman</title>
+    <!------------ Link Css ------------->
+    <link rel="stylesheet" href="css/style.css" />
+    <!------------ Link Js -------------->
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <!------------ Wrapper Start -------------->
+    <div class="wrapper">
+      <!------------ main-Container Start -------------->
+      <div class="main-container">
+        <!----------- good or bad animation conatiner -------------->
+        <div class="good-bad-emoji-container">👍</div>
+        <!------------ Intro-Container Start -------------->
+        <div class="intro-container">
+          <h1>🙂 Welcome To Quiz With Aman</h1>
+          <button class="common-btn-style start-btn">Start</button>
+        </div>
+        <!------------ Intro-Container End -------------->
+        <!------------ question-Options-Container Start -------------->
+        <div class="question-options-container display-none">
+          <h1 class="question"><span class="question-number">1</span></h1>
+          <!------------ options-Container Start -------------->
+          <div class="options-container">
+            <ul>
+              <li class="option option-1"></li>
+              <li class="option option-2"></li>
+              <li class="option option-3"></li>
+              <li class="option option-4"></li>
+            </ul>
+          </div>
+          <!------------ options-Container Start -------------->
+          <!------------ buttons-Container Start -------------->
+          <div class="buttons-container">
+            <button class="next-btn common-btn-style">Next</button>
+            <button class="end-btn common-btn-style">End Quiz</button>
+          </div>
+          <!------------ buttons-Container Start -------------->
+        </div>
+        <!------------ question-Options-Container End -------------->
+        <!------------ result-Container Start -------------->
+        <div class="result-container display-none">
+          <h1 class="attempt-message">You Attempt total 10 Question</h1>
+          <ul>
+            <li class="correct-questions">Correct Answers: 8</li>
+            <li class="wrong-questions">Wrong Answers: 2</li>
+          </ul>
+          <h1 class="score-message">You Scored : 8/10</h1>
+          <button class="restart-btn common-btn-style">Restart</button>
+        </div>
+        <!------------ result-Container End -------------->
+      </div>
+      <!------------ main-Container Start -------------->
+    </div>
+    <!------------ Wrapper End -------------->
+  </body>
+</html>

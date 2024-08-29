@@ -1,0 +1,197 @@
+/************* Google Font **************/
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@500&display=swap');
+
+/************* Reset Properties **************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'Lato', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/*********** Variables **************/
+:root {
+    --body-bg: #dcdde1;
+    --wrong-answer: #e74c3c;
+    --correct-answer: #2ecc71;
+    --container-bg: #1e3799;
+    --options-bg: #7efff5;
+    --btn-bg: #f53b57;
+    --white: #fff;
+    --black: #000;
+    --text-color: #ffeaa7;
+}
+
+/*************** Utility Classes (Common-classes) **************/
+.common-btn-style {
+    outline: none;
+    border: 0;
+    padding: 1rem 2rem;
+    color: var(--white);
+    background-color: var(--btn-bg);
+    margin: 2rem 0;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    font-size: 1.5rem;
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.514);
+}
+
+.common-btn-style:hover {
+    background-color: #fe2344;
+}
+
+/************** Common-styling ******************/
+h1 {
+    letter-spacing: 1px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+li {
+    list-style: none;
+}
+
+/************** Main Syling Start *****************/
+
+/************** wrapper *****************/
+.wrapper {
+    min-height: 100vh;
+    background-color: var(--body-bg);
+    display: grid;
+    place-items: center;
+}
+
+/************** main-container *****************/
+.main-container {
+    width: 50rem;
+    position: relative;
+    min-height: 25rem;
+    padding: 2rem 3rem;
+    background-color: var(--container-bg);
+    box-shadow: 2px 2px 1.3rem 0 rgba(0, 0, 0, 0.541), -2px -2px 1.3rem 0 rgba(0, 0, 0, 0.514);
+}
+
+/************** good or bad animation conatiner ************/
+.good-bad-emoji-container {
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    opacity: 0;
+}
+
+@keyframes showGoodBad {
+    0% {
+        font-size: 0;
+        bottom: 0;
+        opacity: 0;
+    }
+
+    50% {
+        font-size: 8rem;
+        bottom: 40%;
+        opacity: 1;
+    }
+
+    100% {
+        font-size: 0;
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+/************** intro-container *****************/
+.intro-container {
+    color: var(--white);
+    text-align: center;
+}
+
+.intro-container h1 {
+    padding-top: 5rem;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+/************** question-options-container *****************/
+.question-options-container .question {
+    color: var(--text-color);
+    text-align-last: center;
+    margin-bottom: 2.5rem;
+}
+
+/************** options-container *****************/
+.options-container {
+    padding: 0 3rem;
+    text-transform: uppercase;
+}
+
+.options-container li {
+    padding: 1rem;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--body-bg);
+    color: var(--white);
+    word-break: break-all;
+    cursor: pointer;
+}
+
+.options-container li:hover {
+    background-color: #1a3bbe;
+}
+.options-container li .arrow-icon{
+    font-size:1.6rem ;
+    margin-right: 1rem;
+}
+/************** buttons-container *****************/
+.buttons-container {
+    text-align: center;
+}
+
+.buttons-container .next-btn {
+    margin-right: 2rem;
+}
+
+
+/**************** result-container ****************/
+.result-container {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.result-container h1 {
+    color: var(--text-color);
+}
+
+.result-container ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem 0;
+    list-style: none;
+    color: var(--body-bg);
+    font-size: 1.5rem;
+
+}
+
+/************* Javascript Used Classes ****************/
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.showAnimation {
+    animation: showGoodBad 1.5s 1 ease-in;
+}
+
+/************* Media-Queries *****************/
+@media only screen and (max-width:600px) {
+    .main-container {
+        width: 92vw;
+    }
+}
